@@ -10,7 +10,7 @@ class Solution {
             if (height[lp]<height[rp]){
                 lp++;
             } 
-            else rp--;
+            else rp--; 
 
         }
         return maxWater;
