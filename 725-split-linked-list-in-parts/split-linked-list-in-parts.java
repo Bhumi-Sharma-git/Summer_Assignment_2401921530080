@@ -22,11 +22,11 @@ class Solution {
         int extra=len%k;
 
         for(int i=0;i<k;i++){
-            if(temp==null) break;
+           
             ListNode prev=null;
             ListNode currHead=temp;
             len=0;
-            while(len<avg ){
+            while(len<avg && temp!=null ){
                 prev=temp;
                 temp=temp.next;
                 len++;
@@ -36,8 +36,9 @@ class Solution {
                 temp=temp.next;
                 extra--;
             }
-            
+            if(prev!=null){
             prev.next= null; 
+            }
                //detachprevious list
             res[i]=currHead; //insert head
         }
