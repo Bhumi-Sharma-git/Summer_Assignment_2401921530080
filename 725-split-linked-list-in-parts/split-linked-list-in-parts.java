@@ -26,7 +26,7 @@ class Solution {
             ListNode prev=null;
             ListNode currHead=temp;
             len=0;
-            while(len<avg && temp!=null){
+            while(len<avg ){
                 prev=temp;
                 temp=temp.next;
                 len++;
