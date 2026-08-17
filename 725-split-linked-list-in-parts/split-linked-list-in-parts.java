@@ -36,9 +36,9 @@ class Solution {
                 temp=temp.next;
                 extra--;
             }
-            if(prev!=null){
+            
             prev.next= null; 
-            }   //detachprevious list
+               //detachprevious list
             res[i]=currHead; //insert head
         }
         return res;
