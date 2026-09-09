@@ -1,6 +1,6 @@
 class Solution {
     public void rotate(int[][] matrix) {
-       int n=matrix.length;
+       int n=matrix[0].length;
        //step 1: transpos ethe matrix
        for(int i=0;i<n;i++){
         for(int j=i;j<n;j++){
