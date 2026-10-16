@@ -20,7 +20,7 @@ class Solution {
     }
     public boolean isDigit(char ch){
         int ascii=(int)ch;
-        if(ascii>=48 && ascii<=58) return true;
+        if(ascii>=48 && ascii<=57) return true;
         else return false;
     }
 }
