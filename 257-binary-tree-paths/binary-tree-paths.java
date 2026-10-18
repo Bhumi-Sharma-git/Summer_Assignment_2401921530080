@@ -22,7 +22,7 @@ class Solution {
     void solve(TreeNode root, String path,List<String> ans){
         if(root==null) return;
         if(path.equals("")){
-            path= ""+root.val;
+            path+=root.val;
         }
         else{
             path+="->"+root.val;
