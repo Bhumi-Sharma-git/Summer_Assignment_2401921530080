@@ -8,14 +8,14 @@ class Solution {
        } 
        for(int i=2*n-1;i>=0;i--){
         int idx=i%n;
-        while(!st.isEmpty() && nums[st.peek()]<=nums[idx]){
+        while(!st.isEmpty() && st.peek()<=nums[idx]){
             st.pop();
         }
         if(i<n && !(st.isEmpty())){
-ans[i]=nums[st.peek()];
+ans[i]=st.peek();
 
         }
-        st.push(idx);
+        st.push(nums[idx]);
        }
        return ans;
     }
